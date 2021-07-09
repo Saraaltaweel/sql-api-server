@@ -6,6 +6,7 @@ const collection = require('../models/data-collection-class')
 const food = require('../models/food');
 const newFood = new collection(food);
 
+
 router.get('/',getFood);
 router.get('/:id',getOneFood);
 router.post('/',createFood);
