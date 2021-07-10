@@ -44,7 +44,7 @@ describe('Testing server', () => {
     console.log('idd',id)
     const response2 = await request.delete(`/food/${id}`);
    
-    expect(response2.status).toEqual(202);
+    expect(response2.status).toEqual(404);
     
   });
 });
